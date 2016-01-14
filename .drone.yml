@@ -1,3 +1,5 @@
+debug: true
+
 clone:
   path: github.com/drone/drone
 
@@ -21,15 +23,24 @@ compose:
       - MYSQL_DATABASE=test
       - MYSQL_ALLOW_EMPTY_PASSWORD=yes
 
+notify:
+  irc:
+    prefix: build
+    nick: drone
+    channel: wine-zh
+    server:
+      host: chat.freenode.net
+      port: 6667
+
 publish:
   docker:
-    username: drone
+    username: fracting
     password: $$DOCKER_PASS
     email: $$DOCKER_EMAIL
-    repo: drone/drone
+    repo: fracting/drone
     tag:
-      - "latest" 
+      - "latest"
       - "0.4"
     when:
-      repo: drone/drone
+      repo: fracting/drone
       branch: master
