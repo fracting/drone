@@ -21,7 +21,7 @@ import (
 const (
 	DefaultURL   = "https://github.com"
 	DefaultAPI   = "https://api.github.com"
-	DefaultScope = "repo,repo:status,user:email"
+	DefaultScope = "read:org,user:email,repo_deployment,repo:status,write:repo_hook"
 )
 
 type Github struct {
