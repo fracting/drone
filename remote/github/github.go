@@ -230,7 +230,7 @@ func (g *Github) Status(u *model.User, r *model.Repo, b *model.Build, link strin
 	status := getStatus(b.Status)
 	desc := getDesc(b.Status)
 	data := github.RepoStatus{
-		Context:     github.String("continuous-integration/drone"),
+		Context:     github.String("continuous-integration/tea"),
 		State:       github.String(status),
 		Description: github.String(desc),
 		TargetURL:   github.String(link),
