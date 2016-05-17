@@ -19,6 +19,8 @@ html
         div
             div.logo
             a[href="/authorize"] Login
+        div
+            a[href="https://docs.tea-ci.org/usage/overview/"] Documentation
 
         if Error == "oauth_error"
             div.alert.alert-danger
