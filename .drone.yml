@@ -38,4 +38,4 @@ publish:
     tag: [ "latest", "0.4.2" ]
     when:
       repo: fracting/drone
-      branch: master
+      branch: [ "master", "upstream-0.4.2" ]
