@@ -34,12 +34,8 @@ publish:
     username: drone
     password: $$DOCKER_PASS
     email: $$DOCKER_EMAIL
-    repo: drone/drone
+    repo: fracting/drone
     tag: [ "latest", "0.4.2" ]
     when:
-      repo: drone/drone
+      repo: fracting/drone
       branch: master
-
-notify:
-  gitter:
-    webhook: https://webhooks.gitter.im/e/$$GITTER_KEY
