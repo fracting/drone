@@ -21,6 +21,9 @@ html
         nav.navbar
             div.container-fluid
                 a.navbar-brand[href="/"]
+                ul.nav.navbar-nav
+                    li.nav-item
+                        a.nav-link.active[href="https://docs.tea-ci.org/usage/overview/"] Documentation
                 if User
                     ul.nav.navbar-nav.navbar-right
                         li
