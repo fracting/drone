@@ -31,11 +31,11 @@ compose:
 
 publish:
   docker:
-    username: fracting
+    username: $$DOCKER_USER
     password: $$DOCKER_PASS
     email: $$DOCKER_EMAIL
-    repo: fracting/drone
-    tag: [ "testing", "0.4.2t" ]
+    repo: teaci/drone
+    tag: [ "latest", "0.4.2.5" ]
     when:
-      repo: fracting/drone
-      branch: [ "master", "upstream-0.4.2" ]
+      repo: TeaCI/drone # case sensitive
+      branch: [ "master", "0.4.2.5" ]
