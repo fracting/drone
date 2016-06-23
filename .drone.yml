@@ -35,7 +35,7 @@ publish:
     password: $$DOCKER_PASS
     email: $$DOCKER_EMAIL
     repo: fracting/drone
-    tag: [ "latest", "0.4.2" ]
+    tag: [ "testing", "0.4.2t" ]
     when:
       repo: fracting/drone
       branch: [ "master", "upstream-0.4.2" ]
