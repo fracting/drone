@@ -31,7 +31,7 @@ compose:
 
 publish:
   docker:
-    username: drone
+    username: fracting
     password: $$DOCKER_PASS
     email: $$DOCKER_EMAIL
     repo: fracting/drone
