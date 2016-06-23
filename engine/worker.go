@@ -10,7 +10,7 @@ import (
 
 var (
 	// name of the build agent container.
-	DefaultAgent = "fracting/drone-exec:latest"
+	DefaultAgent = "fracting/drone-exec:0.4.2t"
 
 	// default name of the build agent executable
 	DefaultEntrypoint = []string{"/bin/drone-exec"}
