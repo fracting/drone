@@ -10,7 +10,7 @@ import (
 
 var (
 	// name of the build agent container.
-	DefaultAgent = "teaci/drone-exec:0.4.2.5"
+	DefaultAgent = "teaci/drone-exec:0.4.2.6"
 
 	// default name of the build agent executable
 	DefaultEntrypoint = []string{"/bin/drone-exec"}

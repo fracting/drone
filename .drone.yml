@@ -35,7 +35,7 @@ publish:
     password: $$DOCKER_PASS
     email: $$DOCKER_EMAIL
     repo: teaci/drone
-    tag: [ "latest", "0.4.2.5" ]
+    tag: [ "latest", "0.4.2.6" ]
     when:
       repo: TeaCI/drone # case sensitive
-      branch: [ "master", "0.4.2.5" ]
+      branch: [ "master", "0.4.2.6" ]
